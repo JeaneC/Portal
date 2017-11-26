@@ -1,17 +1,13 @@
-/*
-COLORS
+//COLORS
+export const primaryColor = "#eb2f64";
+export const primaryLightColor = "#FF3366";
+export const primaryDarkColor = "#BA265D";
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
+export const greyLight1 = "#faf9f9";
+export const greyLight2 = "#f4f2f2";
+export const greyLight3 = "#f0eeee";
+export const greyLight4 = "#ccc";
 
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
+export const greyDark1 = "#333";
+export const greyDark2 = "#777";
+export const greyDark3 = "#999";

@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import DetailList from './DetailList';
+import UserReview from './UserReview';
 
 import hotel1 from '../assets/img/hotel-1.jpg';
 import hotel2 from '../assets/img/hotel-2.jpg';
@@ -137,6 +138,7 @@ const Main = () => {
   `
 
   const Detail = styled.div`
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
@@ -144,18 +146,14 @@ const Main = () => {
   `
 
   const Description = styled.div`
-    font-size: 1.4rem;
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding:  3rem;
     flex: 0 0 60%;
-    margin-right: 4.5rem;
+    margin-right: 3.5rem;
   `
 
-  const UserReview = styled.div`
-    background-color: yellowgreen;
-    flex: 1;
-  `
+
 
   const Paragraph = styled.p`
 
@@ -163,11 +161,6 @@ const Main = () => {
   const Paragraph2 = styled.p`
     margin-bottom: 0;
   `
-
-
-
-
-
 
   const Reccomend = styled.div`
     font-size: 1.3rem;
@@ -194,6 +187,8 @@ const Main = () => {
       margin-right: -1.5rem;
     }
   `
+
+
 
   return (
     <Frame>
@@ -261,6 +256,7 @@ const Main = () => {
             </ReccomendFriends>
           </Reccomend>
         </Description>
+
         <UserReview>
 
         </UserReview>

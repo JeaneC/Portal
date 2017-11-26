@@ -1,9 +1,16 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+import DetailList from './DetailList';
+
 import hotel1 from '../assets/img/hotel-1.jpg';
 import hotel2 from '../assets/img/hotel-2.jpg';
 import hotel3 from '../assets/img/hotel-3.jpg';
+import friendPhoto1 from '../assets/img/user-3.jpg';
+import friendPhoto2 from '../assets/img/user-4.jpg';
+import friendPhoto3 from '../assets/img/user-5.jpg';
+import friendPhoto4 from '../assets/img/user-6.jpg';
+
 
 import Star from '../assets/icons/star';
 import LocationPin from '../assets/icons/location-pin';
@@ -28,9 +35,7 @@ const Main = () => {
 
   const Frame = styled.main`
     background-color: #fff;
-    height: 80rem;
     flex: 1;
-
 
   `
 
@@ -51,7 +56,7 @@ const Main = () => {
   const Overview = styled.div`
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-bottom: var(--line);
 
     svg {
       width: 1.75rem;
@@ -131,11 +136,68 @@ const Main = () => {
     margin-right: .5rem;
   `
 
+  const Detail = styled.div`
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+  `
 
+  const Description = styled.div`
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding:  3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+  `
+
+  const UserReview = styled.div`
+    background-color: yellowgreen;
+    flex: 1;
+  `
+
+  const Paragraph = styled.p`
+
+  `
+  const Paragraph2 = styled.p`
+    margin-bottom: 0;
+  `
+
+
+
+
+
+
+  const Reccomend = styled.div`
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+
+    display: flex;
+    align-items: center;
+  `
+
+  const ReccomendCount = styled.p`
+    margin-right: auto;
+  `
+  const ReccomendFriends = styled.div`
+
+  `
+
+  const ReccomendPhoto = styled.img`
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  `
 
   return (
     <Frame>
-      <Gallery class="gallery">
+      <Gallery>
         <Figure>
           <Photo src={hotel1} />
         </Figure>
@@ -175,6 +237,34 @@ const Main = () => {
           </RatingCount>
         </OverviewRatings>
       </Overview>
+
+
+      <Detail>
+        <Description>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce purus eros, vestibulum id lacinia ut, interdum sed libero. Etiam ac cursus massa. Mauris scelerisque magna orci, et convallis sapien tempor sodales.
+          </Paragraph>
+          <Paragraph2>
+            Vestibulum congue enim quis porttitor hendrerit. Morbi varius congue augue, sit amet porta justo iaculis eu.
+          </Paragraph2>
+          <DetailList>
+          </DetailList>
+          <Reccomend>
+            <ReccomendCount>
+              Lucy and 3 other friends recommend this hotel
+            </ReccomendCount>
+            <ReccomendFriends>
+              <ReccomendPhoto src={friendPhoto1} />
+              <ReccomendPhoto src={friendPhoto2} />
+              <ReccomendPhoto src={friendPhoto3} />
+              <ReccomendPhoto src={friendPhoto4} />
+            </ReccomendFriends>
+          </Reccomend>
+        </Description>
+        <UserReview>
+
+        </UserReview>
+      </Detail>
     </Frame>
   )
 }

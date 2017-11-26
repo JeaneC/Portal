@@ -5,6 +5,7 @@ const Main = () => {
   const Frame = styled.main`
     background-color: #fff;
     background-color: orangered;
+    height: 80rem;
     flex: 1;
   `
   return (

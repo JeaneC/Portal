@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled, { injectGlobal } from 'styled-components';
 
-import { primaryColor } from './assets/constants';
 import Header from './components/Header';
 import Content from './components/Content';
 

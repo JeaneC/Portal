@@ -82,7 +82,7 @@ const NavBar = () => {
       </IconBox>
       <UserBox>
         <UserPhoto src={userImg} />
-        <UserName>Name</UserName>
+        <UserName>John</UserName>
       </UserBox>
     </Navigation>
   )
